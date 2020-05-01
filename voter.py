@@ -2,7 +2,7 @@ import pyautogui
 import time
 
 url = ""
-no_of_votes =                                     #How many times to vote
+no_of_votes = 1                                    #How many times to vote(try 1 for the beginning to check the X,Y)
 
 #print(pyautogui.position())            #Change the X,Y coordinates accordingly
 
