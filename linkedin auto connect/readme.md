@@ -2,12 +2,15 @@ This script sends auto connect request to every result in the search result
 
 Requirements
   pyautogui
+  .
   pip install pyautogui
   
   open-cv
+  .
   pip install opencv-python
   
   time
+  .
   pip install time
   
   and the screenshots of the buttons, (already uploaded) in the same folder as the file.
