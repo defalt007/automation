@@ -9,7 +9,8 @@ Thank you'''
 
 while True:
 
-    connectbutpoint = pyautogui.locateCenterOnScreen('connectbut.png', confidence =0.8) #locate the connect button
+    connectbutlocation = pyautogui.locateOnScreen('connectbut.png', confidence =0.8) #locate the connect button
+    connectbutpoint = pyautogui.center(connectbutlocation)     #give the co-ordinates to our variable
     pyautogui.click(connectbutpoint) #click on connect button
     time.sleep(0.2)  #giving the time to browser to letrender the addnote popup
     notebutpoint = pyautogui.locateCenterOnScreen('notebut.png', confidence =0.8) #locate the add note button
