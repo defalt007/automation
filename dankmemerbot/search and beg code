@@ -1,6 +1,7 @@
 import pyautogui
 import time
 
+#to exit take your cursor to any corner and stay there for 30 seconds
 #print(pyautogui.position()) use this to get the position of the first word of the last line sent.
 #get screen
 pyautogui.click(496,952)  #enter the X,Y coordinates down as well where you see mine.
