@@ -1,6 +1,15 @@
 This script sends auto connect request to every result in the search result
 
-Requirements
+Install procedure
+1. Download the entire directory
+2. Open autoconnect.py and change the message as per your requirement
+3. open browser, login, search, when happy with the results, run.
+
+visual basic recommended, can work via notepad too.
+
+prerequisite - python3
+
+Requirements - auto fulfilled by the script,
   pyautogui
   .
   pip install pyautogui
@@ -12,6 +21,10 @@ Requirements
   time
   .
   pip install time
+  
+  pillow
+  .
+  pip install pillow
   
   and the screenshots of the buttons, (already uploaded) in the same folder as the file.
   
