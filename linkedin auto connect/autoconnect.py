@@ -6,6 +6,9 @@ try:
     import pyautogui
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "pyautogui"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pillow"])
+    
     import pyautogui
 
 message = '''Hi, Hope you are doing great.
@@ -17,11 +20,13 @@ while True:
     connectbutlocation = pyautogui.locateOnScreen('connectbut.png', confidence =0.8) #locate the connect button
     connectbutpoint = pyautogui.center(connectbutlocation)     #give the co-ordinates to our variable
     pyautogui.click(connectbutpoint) #click on connect button
-    time.sleep(0.2)  #giving the time to browser to letrender the addnote popup
+    time.sleep(2)  #giving the time to browser to letrender the addnote popup
     notebutpoint = pyautogui.locateCenterOnScreen('notebut.png', confidence =0.8) #locate the add note button
     pyautogui.click(notebutpoint)  #click on add note button button
+    time.sleep(1)
 
     pyautogui.write(message) #to input the designated message
+    time.sleep(1)
 
     sendbutpoint = pyautogui.locateCenterOnScreen('sendbut.png', confidence =0.8) #locate the send invitation button
     pyautogui.click(sendbutpoint) #click on send invitation button
