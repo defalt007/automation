@@ -17,7 +17,7 @@ Thank you'''
 
 while True:
 
-    connectbutlocation = pyautogui.locateOnScreen('connectbut.png', confidence =0.8) #locate the connect button
+    connectbutlocation = pyautogui.locateOnScreen('connectbut2.PNG', confidence =0.8) #locate the connect button
     connectbutpoint = pyautogui.center(connectbutlocation)     #give the co-ordinates to our variable
     pyautogui.click(connectbutpoint) #click on connect button
     time.sleep(2)  #giving the time to browser to letrender the addnote popup
@@ -28,7 +28,7 @@ while True:
     pyautogui.write(message) #to input the designated message
     time.sleep(1)
 
-    sendbutpoint = pyautogui.locateCenterOnScreen('sendbut.png', confidence =0.8) #locate the send invitation button
+    sendbutpoint = pyautogui.locateCenterOnScreen('send.PNG', confidence =0.8) #locate the send invitation button
     pyautogui.click(sendbutpoint) #click on send invitation button
 
     time.sleep(1)   #a one second delay just so that linkedin does not consider you a bot spitting connect requests
